@@ -19,6 +19,8 @@ The Library Management System is a web-based application built to streamline and
 5. Real-time Communication: Socket.io (optional)
 
 
+## Instructions to use the project : 
+
 1. Clone the repository
 ```
 git clone https://github.com/akash-nagar95/LMs
