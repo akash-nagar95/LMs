@@ -1,11 +1,31 @@
+# Library Management System
+
+## Project Description
+The Library Management System is a web-based application built to streamline and simplify the management of library operations. The system allows administrators to manage books, users, and transactions efficiently, while users can search, borrow, and return books seamlessly.
+
+## Key Features:
+
+1. User authentication and role-based access control (Admin and User).
+2. Add, update, and delete book records.
+3. Track borrowing and return transactions.
+4. Search functionality for books by title, author, or genre.
+5. Real-time updates on book availability.
+
+## Tech Stack
+1. Frontend: React.js
+2. Backend: Node.js, Express.js
+3. Database: MongoDB
+4. Authentication: JSON Web Tokens (JWT)
+5. Real-time Communication: Socket.io (optional)
+
 
 1. Clone the repository
 ```
-git clone https://github.com/sayakghorai34/Library-Management-System.git
+git clone https://github.com/akash-nagar95/LMs
 ```
 2. Open the terminal and navigate to the project directory
 ```
-cd Library-Management-System
+cd LMs
 ```
 3. Go to `backend` directory and install dependencies
 ```
@@ -14,8 +34,8 @@ npm install
 ```
 4. Locate and rename the `.env.example` file in the `backend` to `.env` and add the following environment variables
 ```
-PORT=define any suitable port
-MONGODB_URI=your mongodb connection string
+PORT = define any suitable port
+MONGODB_URI = your mongodb connection string
 ```
 5. Run the following command to start the server
 ```
@@ -29,7 +49,7 @@ npm install
 ```
 2. rename the `.env.example` file in the `frontend` to `.env` and add the following environment variables:
 ```
-REACT_APP_API_URI=http://localhost:<port>/api
+REACT_APP_API_URI = http://localhost:<port>/api
 ```
 (Note: the URI should end with `/api`. Else The below modification needs to be done on the `backend/server.js`)
 ```
@@ -48,9 +68,7 @@ npm start
 4. Open the browser and navigate to `http://localhost:3000/` to view the client
 
 # Note:
- - Test(useless).js is just a checking file to see if the server is running or not. It is not a part of the project
  - Run the server before running the client(else the client will not fetch data until the server is running)
  - The project is still under development and some features may not work as expecte 
  - the `npm start` command will start the server using nodemon. To change the behaviour, change the `start` script in `package.json` file in the `backend` directory
- - The project is still under development and hence the Demo UI or the video may not be exact same as the current UI
 
