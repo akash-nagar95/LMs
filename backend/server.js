@@ -14,8 +14,8 @@ app.use(cors());
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI,{
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true,
   // dbName: 'Library_DB',
 })
 .then(()=>{console.log("Database connected successfully");})
